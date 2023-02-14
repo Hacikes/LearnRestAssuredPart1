@@ -1,0 +1,14 @@
+[
+  {
+    "id": 10,
+    "Text": "Hello",
+    "email": "test1234@mail.ru",
+    "name": "Alex",
+    "jobs": ["tester", "trainer"],
+    "favFoods": {
+      "breakfast": "eggs",
+      "lunch": "potato",
+      "dinner": ["salat", "meet"]
+    }
+  }
+]
