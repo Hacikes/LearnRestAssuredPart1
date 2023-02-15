@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b5f97033-50a7-4456-84e8-c8cafe44ee38" name="Changes" comment="Создание статических и динамических POST запросов, считывание тела запроса из файла. Работа с Хэш-карт и списков, а так же внешней библиотеки JSON для удобной работы с JSON объектами и массивами. Класс PostRequest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/PostRequestUsingPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/PostRequestUsingPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
