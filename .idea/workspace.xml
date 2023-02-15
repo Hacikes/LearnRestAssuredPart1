@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5f97033-50a7-4456-84e8-c8cafe44ee38" name="Changes" comment="">
+    <list default="true" id="b5f97033-50a7-4456-84e8-c8cafe44ee38" name="Changes" comment="Создание статических и динамических POST запросов, считывание тела запроса из файла. Работа с Хэш-карт и списков, а так же внешней библиотеки JSON для удобной работы с JSON объектами и массивами. Класс PostRequest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/GetRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,21 +45,16 @@
     "settings.editor.selected.configurable": "preferences.intentionPowerPack"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.PostRequest.test6">
-    <configuration name="PostRequest.test2" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Runner">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pojo.Runner" />
       <module name="SeleniumAPILearningProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tests.*" />
+          <option name="PATTERN" value="com.pojo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.PostRequest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner" />
         <item itemvalue="TestNG.PostRequest.test6" />
         <item itemvalue="TestNG.PostRequest.test5" />
         <item itemvalue="TestNG.PostRequest.test4" />
         <item itemvalue="TestNG.PostRequest.test3" />
-        <item itemvalue="TestNG.PostRequest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +150,14 @@
       <option name="presentableId" value="Default" />
       <updated>1676287631254</updated>
     </task>
+    <task id="LOCAL-00001" summary="Создание статических и динамических POST запросов, считывание тела запроса из файла. Работа с Хэш-карт и списков, а так же внешней библиотеки JSON для удобной работы с JSON объектами и массивами. Класс PostRequest">
+      <created>1676387385424</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676387385424</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +170,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Создание статических и динамических POST запросов, считывание тела запроса из файла. Работа с Хэш-карт и списков, а так же внешней библиотеки JSON для удобной работы с JSON объектами и массивами. Класс PostRequest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создание статических и динамических POST запросов, считывание тела запроса из файла. Работа с Хэш-карт и списков, а так же внешней библиотеки JSON для удобной работы с JSON объектами и массивами. Класс PostRequest" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
