@@ -1,5 +1,7 @@
 package com.pojo;
 
+import java.util.List;
+
 public class Employee {
     // Приватная переменная используется, для того, чтобы можно было использовать сложную логику,
     // например, для того, чтобы задать дефолтное значение, когда она нулевая. С переменными так не получится
@@ -7,9 +9,25 @@ public class Employee {
     private String Text;
     private String email;
     private String name;
+    // Объект favFood, который вынесен в класс FavFood
+    private FavFood favFood;
+    private List<String> jobs;
 
-    // В данном случае сеттеры отсутствуют, так как мы устанавливаем значения конструктором.
-    // Конструктор в свою очередь создаёт неизменяемые объекты
+    public List<String> getJobs() {
+        return jobs;
+    }
+
+    public void setJobs(List<String> jobs) {
+        this.jobs = jobs;
+    }
+
+    public FavFood getFavFood() {
+        return favFood;
+    }
+    public void setFavFood(FavFood favFood) {
+        this.favFood = favFood;
+    }
+
     public int getId() {
         return id;
     }
@@ -23,12 +41,27 @@ public class Employee {
         return name;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+    public void setText(String text) {
+        Text = text;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
 
     //Конструктор
-    public Employee(int id, String text, String email, String name) {
+    public Employee(int id, String text, String email, String name, FavFood favFood, List<String> jobs) {
         this.id = id;
         Text = text;
         this.email = email;
         this.name = name;
+        this.favFood = favFood;
+        this.jobs = jobs;
     }
+
 }
