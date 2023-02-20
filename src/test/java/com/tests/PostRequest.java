@@ -192,8 +192,11 @@ public class PostRequest {
         obj.put("id", String.valueOf(new Faker().number().randomDigit()));
         obj.put("Text", String.valueOf(new Faker().code().imei()));
         obj.put("email", String.valueOf(new Faker().funnyName().name() + "@gmail.com"));
+        obj.accumulate("email", "test1234@mail.eu"); // (накопление) добавляет что-то к значению ключа и получается массив
+        // к строке выше: Если всего одно значение, то вернётся строка, а не массив
+        obj.append("email13", "6543214@mail.eu"); // в любом случае вернётся массив
         obj.put("name", String.valueOf(new Faker().name().firstName()));
-        obj.putOpt("email1", null); // Если нужно проигрнорировать ключ, то можно использовать эту конструкцию
+        obj.putOpt("email12", null); // Если нужно проигрнорировать ключ, то можно использовать эту конструкцию
         //obj.putOnce("Text", "dont see becose putOnce don't repeat");// При использовании putOnce одинакового поля
         // второй раз не появится
 
@@ -221,6 +224,7 @@ public class PostRequest {
                 //Чтобы этого не делал Jackson
                 .post("https://microsoft-translator-text.p.rapidapi.com/Detect?api-version=3.0");
         response.prettyPrint();
+        System.out.println(response.jsonPath().getString("message")); // Вывод ответа в консоль
 
     }
 

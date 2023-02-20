@@ -8,7 +8,8 @@
     "favFoods": {
       "breakfast": "eggs",
       "lunch": "potato",
-      "dinner": ["salat", "meet"]
+      "dinner": ["salat", "meet"],
+      "marks": ["1q", "2w"]
     }
   }
 ]

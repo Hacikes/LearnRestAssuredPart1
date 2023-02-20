@@ -63,6 +63,15 @@
             <version>1.18.26</version>
             <scope>provided</scope>
         </dependency>
+<!--        Иcпользуется для валидации тела ответа в PostRequestUsingPojo-->
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>5.3.0</version>
+            <scope>test</scope>
+        </dependency>
+
 
     </dependencies>
 </project>

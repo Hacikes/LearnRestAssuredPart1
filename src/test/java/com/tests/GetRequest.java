@@ -4,7 +4,7 @@ import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-// Для того, чтобы ссылаться на класс, а не на метод можно использовать статический импорт, как в примере ниже
+// Для того чтобы ссылаться на класс, а не на метод можно использовать статический импорт, как в примере ниже
 // import static org.testng.annotations.*;
 import java.util.concurrent.TimeUnit;
 import static io.restassured.RestAssured.*;
@@ -30,4 +30,23 @@ public class GetRequest {
         // Выводит время ответа в других единицах измерения
         System.out.println(response.getTimeIn(TimeUnit.SECONDS));
     }
+
+    @Test
+    public void getEmployees() {
+        String response = given()
+                .pathParams("id", 1) // устанавливает значение id
+                .baseUri("http://localhost:3000/")
+                //.header("Content-Type", "application/json")
+                .log()
+                .all()
+                //.body(object.toMap())*/
+                .get("/postrequest/{id}") // используем метод put для обновления данных
+                .prettyPrint();
+
+
+
+
+    }
 }
+
+

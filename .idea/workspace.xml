@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b5f97033-50a7-4456-84e8-c8cafe44ee38" name="Changes" comment="Создание статических и динамических POST запросов, считывание тела запроса из файла. Работа с Хэш-карт и списков, а так же внешней библиотеки JSON для удобной работы с JSON объектами и массивами. Класс PostRequest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/FavFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/FavFood.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/GetRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/PostRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/PostRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/PostRequestUsingPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/PostRequestUsingPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/test.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +30,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/pojo/Employee.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/pojo/FavFood.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/pojo/Marks.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/pojo/Runner.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/pojo/Student.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/tests/PostRequestUsingPojo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test.json" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="TestNG" name="PostRequestUsingPojo.pojoTest" />
+    </enabled-run-configurations>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,23 +61,70 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/user/Downloads/Test_API-master",
+    "last_opened_file_path": "/home/user/Downloads/repo/u210001901_spektr_rigis_ui",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Runner">
-    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pojo.Runner" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/jsonschema" />
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.PostRequestUsingPojo.pojoTest">
+    <configuration name="DeleteRequest.getEmployees" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumAPILearningProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pojo.*" />
+          <option name="PATTERN" value="com.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.DeleteRequest" />
+      <option name="METHOD_NAME" value="getEmployees" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetRequest.getEmployees" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumAPILearningProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.GetRequest" />
+      <option name="METHOD_NAME" value="getEmployees" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostRequestUsingPojo2.pojoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumAPILearningProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.PostRequestUsingPojo2" />
+      <option name="METHOD_NAME" value="pojoTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -72,42 +140,6 @@
       <option name="PACKAGE_NAME" value="com.tests" />
       <option name="MAIN_CLASS_NAME" value="com.tests.PostRequestUsingPojo" />
       <option name="METHOD_NAME" value="pojoTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostRequest.test4" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumAPILearningProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.PostRequest" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostRequest.test5" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumAPILearningProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.PostRequest" />
-      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Runner" />
         <item itemvalue="TestNG.PostRequestUsingPojo.pojoTest" />
+        <item itemvalue="TestNG.PostRequestUsingPojo2.pojoTest" />
+        <item itemvalue="TestNG.DeleteRequest.getEmployees" />
         <item itemvalue="TestNG.PostRequest.test6" />
-        <item itemvalue="TestNG.PostRequest.test5" />
-        <item itemvalue="TestNG.PostRequest.test4" />
+        <item itemvalue="TestNG.GetRequest.getEmployees" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +208,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создание статических и динамических POST запросов, считывание тела запроса из файла. Работа с Хэш-карт и списков, а так же внешней библиотеки JSON для удобной работы с JSON объектами и массивами. Класс PostRequest" />
     <option name="LAST_COMMIT_MESSAGE" value="Создание статических и динамических POST запросов, считывание тела запроса из файла. Работа с Хэш-карт и списков, а так же внешней библиотеки JSON для удобной работы с JSON объектами и массивами. Класс PostRequest" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/test/java/com/tests/PostRequestUsingPojo.java" line="55">
+        <watch expression="response" language="JAVA" />
+      </inline-watch>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
