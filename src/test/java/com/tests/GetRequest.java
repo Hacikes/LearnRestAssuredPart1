@@ -6,45 +6,26 @@ import io.restassured.response.Response;
 import org.testng.annotations.Test;
 // Для того чтобы ссылаться на класс, а не на метод можно использовать статический импорт, как в примере ниже
 // import static org.testng.annotations.*;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 import static io.restassured.RestAssured.*;
 
 public class GetRequest {
     @Test
-    public void getTest(){
-        // Отправляем GETзапрос и записываем ответ в переменню response
-        Response response = given().get("http://localhost:3000/comments");
-        // Получение заголовка
-        System.out.println(response.header("Content-Type"));
-        // Получение наименований и значений всех заголовков
-        Headers headers = response.headers();
-        for (Header header: headers) {
-            System.out.println(header.getName() + ": " + header.getValue());
-        }
-        // Выводим ответ
-        response.prettyPrint();
-        // Выводим статус код
-        System.out.println(response.getStatusCode());
-        // Выводим время ответа в милисекундах
-        System.out.println(response.getTime());
-        // Выводит время ответа в других единицах измерения
-        System.out.println(response.getTimeIn(TimeUnit.SECONDS));
-    }
-
-    @Test
-    public void getEmployees() {
-        String response = given()
-                .pathParams("id", 1) // устанавливает значение id
-                .baseUri("http://localhost:3000/")
-                //.header("Content-Type", "application/json")
+    public void getEmployees() throws IOException {
+        Response response = given()
+                .queryParam("Josh", 1) // устанавливает значение id
+                .baseUri("http://localhost:3004/")
                 .log()
                 .all()
-                //.body(object.toMap())*/
-                .get("/postrequest/{id}") // используем метод put для обновления данных
-                .prettyPrint();
+                .get("posts"); // используем метод put для обновления данных
 
+        // Создаётся файл response.json, в который сохраняется ответ
+        Files.write(Paths.get(System.getProperty("user.dir")+"/response.json"),response.asByteArray());
 
-
+        // В этот раз будет изучен шаблон проектирования Builder
 
     }
 }

@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome5",
+  "definitions": {
+    "Welcome5": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "email": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "favFood": {
+          "$ref": "#/definitions/FavFood"
+        },
+        "jobs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "marks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Mark"
+          }
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email",
+        "favFood",
+        "id",
+        "jobs",
+        "marks",
+        "name",
+        "text"
+      ],
+      "title": "Welcome5"
+    },
+    "FavFood": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "breakfast": {
+          "type": "string"
+        },
+        "lunch": {
+          "type": "string"
+        },
+        "dinner": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "breakfast",
+        "dinner",
+        "lunch"
+      ],
+      "title": "FavFood"
+    },
+    "Mark": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "russian": {
+          "type": "integer"
+        },
+        "english": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "english",
+        "russian"
+      ],
+      "title": "Mark"
+    }
+  }
+}
