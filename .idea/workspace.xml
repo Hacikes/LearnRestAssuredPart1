@@ -7,7 +7,10 @@
     <list default="true" id="b5f97033-50a7-4456-84e8-c8cafe44ee38" name="Changes" comment="Созданы классы PostRequestUsingPojo2, в котором осуществлялись проверки и работа с ответом POST запроса с помощью POJO. Использованы аннотации">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/GetRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/PostRequestUsingPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/PostRequestUsingPojo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +70,25 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GetRequest.getEmployees">
+  <component name="RunManager" selected="TestNG.BuilderDisignPatternTests.buiderTest">
+    <configuration name="BuilderDisignPatternTests.buiderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumAPILearningProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.BuilderDisignPatternTests" />
+      <option name="METHOD_NAME" value="buiderTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DeleteRequest.getEmployees" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumAPILearningProject" />
       <extension name="coverage">
@@ -140,31 +161,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostRequest.test6" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumAPILearningProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.PostRequest" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BuilderDisignPatternTests.buiderTest" />
         <item itemvalue="TestNG.GetRequest.getEmployees" />
         <item itemvalue="TestNG.PostRequestUsingPojo.pojoTest" />
         <item itemvalue="TestNG.PostRequestUsingPojo2.pojoTest" />
         <item itemvalue="TestNG.DeleteRequest.getEmployees" />
-        <item itemvalue="TestNG.PostRequest.test6" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +215,7 @@
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/test/java/com/tests/PostRequestUsingPojo.java" line="55">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/test/java/com/tests/PostRequestUsingPojo.java" line="52">
         <watch expression="response" language="JAVA" />
       </inline-watch>
     </watches-manager>

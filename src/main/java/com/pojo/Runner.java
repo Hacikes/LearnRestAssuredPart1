@@ -1,3 +1,4 @@
+/*
 package com.pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -16,3 +17,4 @@ public class Runner {
         super();
     }
 }
+*/

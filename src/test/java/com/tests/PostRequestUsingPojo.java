@@ -1,17 +1,14 @@
+/*
 package com.tests;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.github.fge.jsonschema.main.JsonValidator;
 import com.github.javafaker.Faker;
 import com.pojo.Employee;
 import com.pojo.FavFood;
 import com.pojo.Marks;
-import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import static io.restassured.RestAssured.*;
@@ -35,7 +32,7 @@ public class PostRequestUsingPojo {
         // Создаём объект используя конструктор из класса Employee
         // Массив используется для статичного JSON массива
         Employee employee =
-                new Employee(new Faker().number().numberBetween(100,1000), "Chelovek", "Josh", "Kelvin", favFood, Arrays.asList("tester", "trainer"), listofmarks);
+                new Employee(new Faker().number().numberBetween(100,1000), "Chelovek", "Josh", "Kelvin");
         Response response = given()
                 .baseUri("https://microsoft-translator-text.p.rapidapi.com")
                 .header("Content-Type", "application/json")
@@ -62,8 +59,11 @@ public class PostRequestUsingPojo {
         // Проверка тела ответа на соответствие JSON Схемы
 //        response.then().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema.json"));// Провал
         // Или проверка может осуществляться таким образом, используя файл, а не строку
-        /*response.then().body(JsonSchemaValidator.matchesJsonSchema(
+        */
+/*response.then().body(JsonSchemaValidator.matchesJsonSchema(
                 new File(System.getProperty(System.getProperty("user.dir")
-                        +"src/test/resources/jsonschema/schema.json"))));*/
+                        +"src/test/resources/jsonschema/schema.json"))));*//*
+
     }
 }
+*/
