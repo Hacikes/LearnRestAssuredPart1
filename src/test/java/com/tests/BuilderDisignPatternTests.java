@@ -16,6 +16,9 @@ public class BuilderDisignPatternTests { // Неизменяемость
 
         // Способы шаблона проектирования Builder
         // 1) External Builder
+        // Builder используется для того, чтобы избежать написания огромного конструктора в обычном понимании
+        // В место этого создаются методы наших переменных и потом они используются в методе сборки build
+        //
         Student studentBuilder = new StudentBuilder()
                 .builder()
                 .and()
